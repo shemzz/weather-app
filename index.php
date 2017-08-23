@@ -1,3 +1,6 @@
+//Author: Shemang David J.
+//API from openweathermap.org
+
 <?php
     
     $weather = "";
@@ -84,17 +87,17 @@
     
       <div class="container">
       
-          <h1>What's The Weather?</h1>
+          <h1>What's The Weather Like?</h1>
           
           
           
           <form>
   <fieldset class="form-group">
-    <label for="city">Enter the name of a city.</label>
+    <label for="city">Enter the name of a city to find out.</label>
     <input type="text" class="form-control" name="city" id="city" placeholder="Eg. London, Tokyo" value = "<?php echo $_GET['city']; ?>">
   </fieldset>
   
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Check Weather</button>
 </form>
       
           <div id="weather"><?php 
